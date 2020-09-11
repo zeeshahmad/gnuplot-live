@@ -1,9 +1,19 @@
 # gnuplot-live
 live editor for gnuplot when one is too lazy to switch windows
 
-#building
+# building
+
 `npm install`
+
 `npm run electron-dev`
+
 `npm run electron-pack`
 
-#windows installer
+# usage
+
+0. install gnuplot
+1. point to `gnuplot.exe` in `config` area
+2. open `.plt` file or type gnuplot code in editor
+3. use
+
+[installer](https://github.com/zeeshahmad/gnuplot-live/releases/download/v0.1.0/gnuplot-live.Setup.0.1.0.exe)
