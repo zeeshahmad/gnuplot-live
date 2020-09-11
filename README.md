@@ -3,7 +3,7 @@ live editor for gnuplot when one is too lazy to switch windows
 
 [download installer](https://github.com/zeeshahmad/gnuplot-live/releases/download/v0.1.0/gnuplot-live.Setup.0.1.0.exe)
 
-![gnuplot live demo](demo.gif)
+![gnuplot live demo](gnuplot-live-demo.gif)
 
 # building
 
