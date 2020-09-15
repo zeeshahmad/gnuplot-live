@@ -12,6 +12,8 @@ clone repository
 
 `npm run electron-dev` (for development)
 
+[trello board](https://trello.com/b/sDEii8oz/gnuplot-live)
+
 # building
 
 clone repository
