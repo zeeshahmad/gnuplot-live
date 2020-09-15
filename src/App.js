@@ -22,10 +22,15 @@ class App extends React.Component {
       gnuplot: fn.getFromStore('gnuplot'),
       clioutput: '',
       viewimage: '',
-      watches: []
+      watches: [],
+      editorIsLive: true
     };
   }
 
+  testmagick() {
+    console.log("testmagick");
+    fn.testmagick(this)
+  }
 
 
 
@@ -43,12 +48,13 @@ class App extends React.Component {
                 handleSaveBtn={() => {fn.handleSaveBtn(this)}}
                 handleCloseBtn={() => {fn.handleCloseBtn(this)}}
                 handleRunBtn={() => {fn.runBufferCode(this)}}
-                handleExportBtn={() => {fn.handleExportBtn(this)}}
                 file={this.state.file} />
               <div className="container mw-100"><div className="row flex-nowrap">
                 <Editor filecontent={this.state.filecontent}
                   handleContentChange={(newcontent) => {fn.handleContentChange(newcontent, this)}}
-                  handleSaveShortCut={() => {fn.onSaveShortCut(this)}} />
+                  handleSaveShortCut={() => {fn.onSaveShortCut(this)}}
+                  live={this.state.editorIsLive}
+                  handleLiveToggle={(e) => {this.setState({editorIsLive: e.target.checked}) }} />
                 <Viewer source={this.state.viewimage} file={this.state.file}
                   filecontent={this.state.filecontent} />
               </div><div className="row flex-nowrap">

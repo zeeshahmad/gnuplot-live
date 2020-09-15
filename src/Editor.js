@@ -19,8 +19,15 @@ class Editor extends React.Component {
     return(
       <div className="cos-xs-6">
         <div className="card text-white bg-primary text-left" style={{width: '600px'}}>
-          <div className="card-header">editor</div>
+          <div className="card-header">editor
+
+          </div>
           <div className="card-body p-2">
+          <div className="form-check form-check-inline">
+          <input onChange={(e)=>{this.props.handleLiveToggle(e)}} className="form-check-input" type="checkbox" checked={this.props.live} id="editorIsLive" />
+          <label className="form-check-label" htmlFor="editorIsLive">
+            Enable live editing (disable when typing output file name)
+          </label></div>
             <AceEditor
               mode="java"
               theme="github"

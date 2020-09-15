@@ -15,7 +15,7 @@ class Viewer extends React.Component {
     }
     return(
       <div className="cos-xs-6 mr-auto">
-        <div className="card bg-light text-left" style={{width: '600px',height: '500px'}}>
+        <div className="card bg-light text-left" style={{width: '600px'}}>
           <div className="card-header">png view</div>
           <div className="card-body">{imagetag}
           </div>

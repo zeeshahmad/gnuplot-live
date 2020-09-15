@@ -20,8 +20,8 @@ class Menubar extends React.Component {
             disabled={this.props.file==null}>Close</button>
           <button className="btn btn-info"
             onClick={this.props.handleRunBtn}>Run</button>
-          <button className="btn btn-outline-success" disabled={this.props.file==null}
-            onClick={this.props.handleExportBtn}>Export</button>
+          {/*<button className="btn btn-outline-success" disabled={this.props.file==null}
+            onClick={this.props.handleExportBtn}>Export</button>*/}
         </div>
         <samp className="d-inline-flex ml-2">current file: {this.props.file}</samp>
       </div>
